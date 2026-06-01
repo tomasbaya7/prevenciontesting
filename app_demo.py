@@ -34,6 +34,7 @@ from puente_digital import cargar_contacto_puente_digital
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 DB_PATH    = os.environ.get("DB_PATH", "/app/data/demo.db")
+os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
 # ─── TELEGRAM CONFIG ──────────────────────────────────────────────────────────
 # Completar con tus datos reales (ver README para instrucciones)
